@@ -1,7 +1,7 @@
 public class _1295_FindNumberswith {
-    public static int findNumbers(int[] nums) {
+    public static int findCountArray(int[] array) {
         int count = 0;
-        for (int a: nums){
+        for (int a: array){
             if (caculatorOf(a) %2 == 0){
                 count++;
             }
@@ -20,7 +20,7 @@ public class _1295_FindNumberswith {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,51};
-        System.out.println(findNumbers(nums));
+        int[] array = {1,22,3,5567,234};
+        System.out.println(findCountArray(array));
     }
 }
