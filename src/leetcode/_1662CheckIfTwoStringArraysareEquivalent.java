@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _1662CheckIfTwoStringArraysareEquivalent {
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         StringBuilder w1 = new StringBuilder();

@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _88_MergeSorted {
     public static void merge2(int[] nums1, int m, int[] nums2, int n) {
         for (int ai: nums2){

@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _27_RemoveElement {
     public static int removeElement2(int[] nums, int val) {
         int n = nums.length;

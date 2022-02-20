@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _1295_FindNumberswith {
     public static int findCountArray(int[] array) {
         int count = 0;

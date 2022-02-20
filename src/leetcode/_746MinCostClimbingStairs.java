@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _746MinCostClimbingStairs {
     public static int minCostClimbingStairs(int[] cost) {
         int[] money = new int[cost.length+1];

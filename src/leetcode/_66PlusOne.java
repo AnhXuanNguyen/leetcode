@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _66PlusOne {
     public static int[] plusOne(int[] digits) {
         int surplus = 1;
