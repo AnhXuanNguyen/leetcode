@@ -1,4 +1,4 @@
-package practive;
+package leetcode;
 
 public class _414ThirdMaximumNumber {
     public static int thirdMax(int[] nums){
