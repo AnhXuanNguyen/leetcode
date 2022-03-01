@@ -52,8 +52,39 @@ public class _912SortAnArray {
         return result;
     }
 
+    public static void quickSort(int[] array, int start, int end){
+        if (start >= end){
+            return;
+        }
+        int key = array[(start+end)/2];
+        int k = partition(array, start, end, key);
+        quickSort(array, start, k-1);
+        quickSort(array, k, end);
+    }
+    public static int partition(int[] array, int start, int end, int key){
+        int il = start;
+        int ir = end;
+        while (il < ir){
+            while (array[il] < key){
+                il++;
+            }
+            while (array[ir] > key){
+                ir--;
+            }
+            if (il <= ir){
+                int temp = array[il];
+                array[il] = array[ir];
+                array[ir] = temp;
+                ir--;
+                il++;
+            }
+        }
+        return il;
+    }
     public static void main(String[] args) {
-        int[] array = {5,1,1,2,0,0};
-        System.out.println(Arrays.toString(sortArray(array)));
+        int[] array = {-1,2,-8,-10};
+        quickSort(array, 0, array.length -1);
+        System.out.println(Arrays.toString(array));
+//        System.out.println(Arrays.toString(sortArray(array)));
     }
 }
